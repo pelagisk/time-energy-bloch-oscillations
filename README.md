@@ -13,7 +13,7 @@ Make sure you have Python version 3.6 or higher installed. The following Python 
 
 - numpy
 - matplotlib
-- [qutip)](http://qutip.org/)
+- [qutip](http://qutip.org/)
 
 To generate plots files, please run from a terminal with the prompt at the root directory of the project (where this `README.md` file is found)
 
