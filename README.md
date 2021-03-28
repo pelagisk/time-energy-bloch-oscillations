@@ -7,9 +7,9 @@ You can find the paper itself here:
 - [https://arxiv.org/abs/1808.08061]
 - [https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.053820]
 
-![fig/bloch](bloch.png "Bloch oscillations")
+![bloch](/fig/bloch.png "Bloch oscillations")
 
-![fig/superbloch](superbloch.png "Super-Bloch oscillations")
+![superbloch](/fig/superbloch.png "Super-Bloch oscillations")
 
 These simulations time-evolve a Gaussian quantum state of width σ in time steps dt, using a
 time-dependent Hamiltonian
