@@ -4,8 +4,30 @@ Simulations for the paper "Bloch-like energy oscillations" (Phys. Rev. A 98, 053
 
 You can find the paper itself here:
 
-- https://arxiv.org/abs/1808.08061
-- https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.053820
+- [https://arxiv.org/abs/1808.08061]
+- [https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.053820]
+
+![fig/bloch](bloch.png "Bloch oscillations")
+
+![fig/superbloch](superbloch.png "Super-Bloch oscillations")
+
+These simulations time-evolve a Gaussian quantum state of width σ in time steps dt, using a
+time-dependent Hamiltonian
+
+$$
+H_{LZg}(t) = ω (Sz ⊗ 1) + λ t (1 ⊗ σz) + J (A ⊗ σx)
+$$
+
+where $Sz = diag(..., -1, 0, 1, ...)$ and A is a n x n matrix with 1 in all
+slots. This is a generalization of a Landau-Zener crossing, and a periodic Hamiltonian for infinite matrix size.
+
+The crossings occur at times which are multiples of ω/λ. The Bloch oscillations occur with a period T_bloch = 4π/ω.
+
+For J = 0: the energies cross without gap
+For J = 1/π: the adiabatic energies are time-independent, flat
+
+There is a duality: for g = s/π, the width of crossings are the same for s and
+1/s.
 
 ## Requirements and running
 
