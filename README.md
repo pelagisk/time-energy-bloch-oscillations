@@ -4,8 +4,8 @@ Simulations for the paper "Bloch-like energy oscillations" (Phys. Rev. A 98, 053
 
 You can find the paper itself here:
 
-- [https://arxiv.org/abs/1808.08061]
-- [https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.053820]
+- https://arxiv.org/abs/1808.08061
+- https://journals.aps.org/pra/abstract/10.1103/PhysRevA.98.053820
 
 ![bloch](/fig/bloch.png "Bloch oscillations")
 
@@ -14,9 +14,7 @@ You can find the paper itself here:
 These simulations time-evolve a Gaussian quantum state of width σ in time steps dt, using a
 time-dependent Hamiltonian
 
-$$
-H_{LZg}(t) = ω (Sz ⊗ 1) + λ t (1 ⊗ σz) + J (A ⊗ σx)
-$$
+![hamiltonian](/fig/h.png "Hamiltonian")
 
 where $Sz = diag(..., -1, 0, 1, ...)$ and A is a n x n matrix with 1 in all
 slots. This is a generalization of a Landau-Zener crossing, and a periodic Hamiltonian for infinite matrix size.
