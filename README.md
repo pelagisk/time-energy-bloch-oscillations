@@ -11,21 +11,20 @@ You can find the paper itself here:
 
 ![superbloch](/fig/superbloch.png "Super-Bloch oscillations")
 
-These simulations time-evolve a Gaussian quantum state of width σ in time steps dt, using a
-time-dependent Hamiltonian
+The (time-dependent) Landau-Zener grid Hamiltonian is defined as
 
 ![hamiltonian](/fig/h.png "Hamiltonian")
 
-where $Sz = diag(..., -1, 0, 1, ...)$ and A is a n x n matrix with 1 in all
-slots. This is a generalization of a Landau-Zener crossing, and a periodic Hamiltonian for infinite matrix size.
+where $S_z = diag(..., -1, 0, 1, ...)$ and A is a n x n matrix with 1 in all
+slots. This is a generalization of a Landau-Zener crossing, and is periodic in time for infinite matrix size. The crossings occur at times which are multiples of ω/λ. Further features of the Hamiltonian:
 
-The crossings occur at times which are multiples of ω/λ. The Bloch oscillations occur with a period T_bloch = 4π/ω.
+- for J = 0: the energies cross without gap
+- for J = 1/π: the adiabatic energies are time-independent, flat
+- for J = s/π, the width of crossings appear to be the same for s and 1/s
 
-For J = 0: the energies cross without gap
-For J = 1/π: the adiabatic energies are time-independent, flat
+In the paper, we show that the dynamics in such a system can be described as a 1D tight-binding model, where the  adiabatic eigenstates (eigenstates of the Hamiltonian at each time t) form the "sites" and the first diabatic corrections act like hopping terms. The energy difference between the adiabatic energies, averaged over one period, acts like a constant force on the adiabatic eigenstates. It is well known that such a force leads to Bloch oscillations, which here occur with a period T_bloch = 4π/ω. Beyond the average over a period ω/λ, there are also *super-Bloch oscillations* due to beating effects, since the energy difference between eigenstates varies within each period.
 
-There is a duality: for g = s/π, the width of crossings are the same for s and
-1/s.
+In the simulations, we prepare an initial quantum state which is a Gaussian superposition of adiabatic eigenstates, of width σ, and time-evolve it. Depending on the width, this leads to breathing-motion or the typical sinusoidal oscillations.
 
 ## Requirements and running
 
